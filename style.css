@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bg: white;
+    --form-color: gray;
+}
+
+.background-logo img{
+    height: 12vh;
+}
+.container{
+    display: flex;
+    background-size: cover;
+    height: 100vh;
+    justify-content: space-between;
+}
+.odin-logo{
+    width: 400px;
+}
+
+.odin-logo .background-logo{
+    background-image: url(img/fredrick-tendong-13aw-Pwdeqk-unsplash.jpg);
+    background-size: cover;
+    height: 105vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+
+
+.container .right-side{
+    padding: 30px 20px;
+    background-color: var(--bg);
+}
+.right-side .text{
+    margin:30px 5px;
+
+}
+
+form{
+    display: column;
+}
+
+fieldset{
+    box-shadow: 3px 3px 3px #888888;
+}
+
+
+
+
+
+
+
+.right-side {
+    display: flex;
+    flex: 5;
+    flex-direction: column;
+    padding: 12rem 5rem 12rem 5rem;
+    background-color: #f9fafb;
+  }
+  
+  .text-and-form {
+    background-color: #f9fafb;
+    margin-left: -3rem;
+    width: 100%;
+  }
+  
+  .text {
+    padding-left: 3px;
+    margin-bottom: 15px;
+    max-width: 700px;
+  }
+  
+  p {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  
+  p:first-child {
+    padding-bottom: 2rem;
+  }
+  
+  fieldset {
+    border: none;
+  
+    background-color: #ffffff;
+  }
+  .fields {
+    padding-left: var(--left-space);
+  }
+  
+  .field-container {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    margin-left: -3.5rem;
+  
+    gap: 8rem;
+    padding-right: 30rem;
+    box-shadow: 0.1rem 0.3rem 0.2rem rgba(202, 202, 202, 0.5);
+  }
+  
+  .column {
+    width: 100%;
+    padding: 10px;
+    max-width: 500px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+  }
+  
+  .column label {
+    font-size: 14px;
+    margin-bottom: 1px;
+  }
+  
+  #form-header {
+    padding-left: 3px;
+    margin-left: -3rem;
+  }
+  
+  input[type='text']:focus,
+  input[type='tel']:focus,
+  input[type='password']:focus,
+  input[type='email']:focus {
+    outline: #3970df;
+    border: 2px solid #3970df;
+    box-shadow: 0.1rem 0.1rem 0.2rem rgba(66, 84, 187, 0.363);
+  }
+  .buttons {
+    height: 100%;
+    margin-top: 3rem;
+    margin-left: -3.5rem;
+    background-color: #f9fafb;
+  }
+  
+  button {
+    padding: 12px 36px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #596d48;
+    color: gray;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  
+  .buttons > div {
+    font-size: 16px;
+  }
+  
+  a {
+    color: #596d48;
+    font-weight: bold;
+  }
+  
+  .error {
+    display: none;
+    color: red;
+    font-size: 10px;
+    margin-top: -8px;
+  }
+
+  button:hover{
+    color: white;
+  }

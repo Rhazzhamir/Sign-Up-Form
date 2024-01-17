@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="odin-logo">
+                <div class="background-logo">
+                    <img src="img/odin-lined.png"  >
+                    <h1>ODIN</h1>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="text">
+                    <h3>"In the computer shop, every problem has a solution."</h3>
+                    <h3>"The computer, like life, needs a reboot from time to time."</h3>
+                    <h3>"No matter how many tabs are open, security is still important."</h3>
+                </div>
+
+                <form action="" method="">
+                    <div class="fieldset-container">
+    
+                            <div class="column">
+                                <label for="user_name">FIRST NAME</label>
+                                <input type="email" id="user_name" placeholder="Enter your first name" required>
+                                
+                                <label for="user_lastName">LAST NAME</label>
+                                <input type="password" id="user_lastName" placeholder="Enter your last name" required>
+
+                                <label for="user_number">PHONE NUMBER</label>
+                                <input type="number" id="user_number" placeholder="Enter your number" required>
+                                
+                            </div>
+                            <div class="column">
+                                <label for="user_email">E-MAIL</label>
+                                <input type="email" id="user_email" placeholder="Enter your email" required>
+                                
+                                <label for="user_password">PASSWORD</label>
+                                <input type="password" id="user_password" placeholder="Enter your password" required>
+    
+                                <label for="user_confirm_password">CONFIRM PASSWORD</label>
+                                <input type="password" id="user_confirm_password" placeholder="Confirm your password" required>
+
+                                <span class="error">The password do not match</span>
+
+                            </div>
+                    </div>
+
+                    <div class="button">
+                        <button type="button">Create Account</button>
+                        <div>Already have an account <a href="">Log in</a></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const UserPass = document.getElementById('user_password');
+    const error = document.getElementsByClassName('error')[0];
+    const Confirm_Pass = document.getElementById('user_confirm_password');
+
+    Confirm_Pass.addEventListener('input', Validation_Error);
+
+    function Validation_Error() {
+        if (UserPass.value !== Confirm_Pass.value) {
+            error.style.display = 'block';
+        } else {
+            error.style.display = 'none';
+        }
+    }
+});
+
+
+    </script>
+</html>
